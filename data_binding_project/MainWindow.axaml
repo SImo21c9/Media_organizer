@@ -1,0 +1,13 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="data_binding_project.MainWindow"
+        x:DataType="local:MainWindow"
+        xmlns:local="clr-namespace:data_binding_project"
+        Title="data_binding_project">
+        <StackPanel>
+                <Button Content="Click here to get info" Click="Button_Click"/>
+                <TextBox Text="{Binding Time}"/>
+                <TextBox Text="{Binding Windspeed}"/>
+                <TextBox Text="{Binding Temperature }"/>
+        </StackPanel>
+</Window>
